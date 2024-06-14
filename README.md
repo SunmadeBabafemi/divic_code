@@ -24,7 +24,11 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript Project For Simple User SIgnup and Login Access Via email and password or biometric data 
+[Nest](https://github.com/nestjs/nest) framework TypeScript Project That Seamlessly provides the following;
+1. User Signup with email and password
+2. user login with email and password
+3. user biometric login setup
+4. user login via biometric key
 
 ## Installation
 
