@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript Project For Simple User SIgnup and Login Access Via email and password or biometric data 
 
 ## Installation
 
