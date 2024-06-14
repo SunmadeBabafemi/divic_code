@@ -35,6 +35,9 @@ export class UserService {
           password: hashedPassword,
         }
       })
+      if (!user) {
+        throw new InternalServerErrorException("Unable To Create User At The Moment")
+      }
 
       // GENERATE ACCESS TOKENS FOR USER AUTHENTICATION ANS SESSION STORE
       const accessToken = await this.jwtHelperService.getNewjwtoken({

@@ -1,8 +1,8 @@
 import { Injectable, CanActivate, ExecutionContext, UnauthorizedException, ForbiddenException } from '@nestjs/common';
 import { GqlExecutionContext } from '@nestjs/graphql';
 import { User } from '@prisma/client';
-import { PrismaService } from 'src/prisma/prisma.service';
-import { JwtHelperService } from 'src/user/jwtHelper.service';
+import { PrismaService } from '../../prisma/prisma.service';
+import { JwtHelperService } from '../../user/jwtHelper.service';
 @Injectable()
 export class AuthGuardGQL implements CanActivate {
   constructor(

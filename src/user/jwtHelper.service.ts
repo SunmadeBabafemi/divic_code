@@ -11,14 +11,12 @@ import { jwtConstants } from '../common/constants/jwt.constant';
 import { configConstant } from '../common/constants/config.constant';
 import { ResponseObject } from '../common/helpers/response';
 import * as  bcrypt from "bcrypt"
-
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 
 
 @Injectable()
 export class JwtHelperService {
   constructor(
-    private prisma: PrismaService,
     private jwTokenService: JwtService,
     private configService: ConfigService,
   ) { }
@@ -49,7 +47,8 @@ export class JwtHelperService {
 
   async getNewjwtoken(payload: {
     id: string,
-    email: string
+    email?: string,
+    bio_key?: string
   }) {
     try {
       const newToken = this.jwTokenService.sign(payload, {

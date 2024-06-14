@@ -3,7 +3,6 @@ import { UserService } from './user.service';
 import { User } from './entities/user.entity';
 import { CreateUserInput } from './dto/create-user.input';
 import { UseGuards, Req } from '@nestjs/common';
-import { ExpressRequestExtension } from 'src/common/interfaces/express-extension.interface';
 import { LoginUserInput } from './dto/login-user.input';
 import { SetUpBiometricKeyInput } from './dto/setup-biometric-key.input';
 import { AuthGuardGQL } from '../common/guards/authGql.guard';
