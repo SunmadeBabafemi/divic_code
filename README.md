@@ -30,10 +30,19 @@
 3. user biometric login setup
 4. user login via biometric key
 
+## API Documentation
+https://documenter.getpostman.com/view/15148492/2sA3XQh2WB
+
 ## Installation
 
 ```bash
 $ npm install
+```
+
+## Database Migration
+
+```bash
+$ npx prisma migrate dev --name init
 ```
 
 ## Running the app
